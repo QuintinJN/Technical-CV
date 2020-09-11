@@ -1,0 +1,60 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Handlee', cursive;
+  font-size: 13pt;
+  background-color: #efefef;
+  padding: 10px;
+  margin: 0;
+}
+h1 {
+  font-size: 15pt;
+  color: #20bcd5;
+  text-align: center;
+  padding: 18px 0 18px 0;
+  margin: 0 0 10px 0;
+}
+h1 span {
+  border: 4px dashed #20bcd5;
+  padding: 10px;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.img-circle {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.section {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#header {
+  background-color: green;
+  background-image: linear-gradient(20deg, rgb(32, 21, 138) 50%, transparent 50%), linear-gradient(-60deg, rgb(165, 42, 155) 30%, transparent 30%);
+  background-size: cover;
+}
+#header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+#header p {
+  font-size: 25pt;
+  color:black;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.quote {
+  font-size: 12pt;
+  text-align: right;
+  margin-top: 10px;
+}
