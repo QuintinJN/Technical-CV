@@ -1,6 +1,6 @@
 html, body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13pt;
+  //font-size: 13pt;
   background-color: #efefef;
   box-sizing: border-box;
   padding: 0px;
@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #babd0c;
   text-align: center;
   padding: 18px 0px 0px 0px;
@@ -40,7 +40,7 @@ h2 span {
   border-bottom: solid #babd0c;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   justify-content: center;
   align-items: center;
   text-align: justify;
@@ -49,9 +49,7 @@ p {
 }
 #information{
   text-align: center;
-
   font-size: 2.4rem;
-
 }
 .container{
   width: 100%;
@@ -74,11 +72,27 @@ hr{
   width: 68%;
   margin: auto;
 }
-table{
-  font-size: 1.4rem;
-  //padding-right: 100px;
+table.a{
+  font-size: 1.2rem;
   padding-left: 147px;
-  text-align: left;
   border-spacing: 130px 10px;
 }
+#bold{
+  font-weight: bold;
+  padding-left: 200px;
+}
+ul{
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-right: 100px;
+  padding-left: 220px;
+}
+table.b{
+  font-size: 1.2rem;
+  border-spacing: 200px 10px;
+  margin-left: 300px;
+}
+
 
