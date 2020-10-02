@@ -29,6 +29,12 @@
       I'm from Johannesburg. I am an avid gamer, I also enjoy watching sports and have started playing guitar in the past year.
     </p>
 </div>
+<p id="cat">And here are 2 random cat facts to brighten your day:</p>
+<ul class="fact" *ngFor="let fact of facts">
+
+   <li>{{fact.text}}</li>
+
+</ul>
 <hr>
 <!-- About Me section end -->
 <!-- Skills and achievments section start -->
@@ -118,3 +124,6 @@
 <div class="bar">
   <br>
 </div>
+
+
+
