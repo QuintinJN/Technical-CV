@@ -29,12 +29,8 @@
       I'm from Johannesburg. I am an avid gamer, I also enjoy watching sports and have started playing guitar in the past year.
     </p>
 </div>
-<p id="cat">And here are 2 random cat facts to brighten your day:</p>
-<ul class="fact" *ngFor="let fact of facts">
-
-   <li>{{fact.text}}</li>
-
-</ul>
+<p id="cat">Here is a random cat fact to brighten your day:</p>
+<p id = fact>• {{facts.text}}</p>
 <hr>
 <!-- About Me section end -->
 <!-- Skills and achievments section start -->
@@ -118,12 +114,12 @@
 <h2><span>Contact Details</span></h2>
 <p id = "center">quintinnel9@gmail.com</p>
 <button type="button" class="btn" (click)="downloadPdf('./assets/CV.pdf','CV.pdf')">
-  Download CV
+  Offline CV
 </button>
+
+  <a target="blank" href="{{users.html_url}}"><button type="button" class="btnGithub">Github profile</button></a>
+
 <!-- Contact me section end -->
 <div class="bar">
   <br>
 </div>
-
-
-
