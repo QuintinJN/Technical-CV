@@ -10,8 +10,7 @@ const FileSaver = require('file-saver');
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  // tslint:disable-next-line:ban-types
-  // users: String[];
+  title = 'CV';
   @Input() public facts: any[] = [];
 
   constructor(private apiService: ApiService) { }
@@ -24,17 +23,10 @@ export class AppComponent implements OnInit {
     FileSaver.saveAs(pdfUrl, pdfName);
   }
 
-  // getUsers(){
-  //   this.apiService.getData().subscribe((data) => {
-  //     console.log(data);
-  //     this.users = data;
-  // });
   getFact(){
     this.apiService.getFact().subscribe((data) => {
       console.log(data);
-      // tslint:disable-next-line:no-string-literal
       this.facts = data;
     });
   }
-
 }
