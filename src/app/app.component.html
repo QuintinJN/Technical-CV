@@ -8,11 +8,11 @@
 <body>
 <div class="container">
   <!-- header start -->
-  <div id="header" class="section">
+  <div class="header">
       <p>Quintin Nel</p>
   </div>
   <!-- header end -->
-  <div id="information">
+  <div class="information">
     <h1>
       I'm a 3rd year Information Technology student.
     </h1>
@@ -30,7 +30,9 @@
     </p>
 </div>
 <p id="cat">Here is a random cat fact to brighten your day:</p>
-<p id = fact>• {{facts.text}}</p>
+<ul class = fact *ngFor=" let fact of facts">
+  <li>{{fact.text}}</li>
+</ul>
 <hr>
 <!-- About Me section end -->
 <!-- Skills and achievments section start -->
@@ -113,13 +115,15 @@
 <!-- Contact me section start -->
 <h2><span>Contact Details</span></h2>
 <p id = "center">quintinnel9@gmail.com</p>
-<button type="button" class="btn" (click)="downloadPdf('./assets/CV.pdf','CV.pdf')">
+<a target="blank" href="{{users.html_url}}"><button type="button" class="btnGithub">My Github profile</button></a>
+<p id=CV>Download my <button type="button" class="btn" (click)="downloadPdf('./assets/CV.pdf','CV.pdf')">
   Offline CV
-</button>
-
-  <a target="blank" href="{{users.html_url}}"><button type="button" class="btnGithub">Github profile</button></a>
-
+</button> or scan the QR code</p>
+<br>
+<img class="img-qr" src="https://qrtag.net/api/qr_3.png?url=https://drive.google.com/file/d/1eS0z54zrt_EzHE5BEGFqwt_KppbgiiOw/view?usp=sharing" alt="qrtag">
+<br>
 <!-- Contact me section end -->
 <div class="bar">
   <br>
 </div>
+</body>

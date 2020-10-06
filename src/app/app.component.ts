@@ -11,7 +11,7 @@ const FileSaver = require('file-saver');
 })
 export class AppComponent implements OnInit {
   title = 'CV';
-  @Input() public facts: any = {};
+  @Input() public facts: any[] = [];
   @Input() public users: any = {};
 
   constructor(private apiService: ApiService) { }
@@ -26,15 +26,15 @@ export class AppComponent implements OnInit {
   }
 
   getFact(){
-    this.apiService.getFact().subscribe((data) => {
-      console.log(data);
-      this.facts = data;
-    });
-  }
-  getUsers(){
-    this.apiService.getUsers().subscribe((data) => {
-      console.log(data);
-      this.users = data;
-    });
-  }
+     this.apiService.getFact().subscribe((data) => {
+       console.log(data);
+       this.facts = data;
+     });
+   }
+   getUsers(){
+     this.apiService.getUsers().subscribe((data) => {
+       console.log(data);
+       this.users = data;
+     });
+   }
 }
