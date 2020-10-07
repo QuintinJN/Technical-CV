@@ -1,20 +1,67 @@
 html, body {
   font-family: Arial, Helvetica, sans-serif;
-  //font-size: 13pt;
   background-color: #ffffff;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-.header p {
-  font-size: 420%;
-  color: rgba(0, 0, 0, 0.89);
+.header{
+  background-color: #CFB53B;
   padding-top: 36vh;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
-  border-bottom: solid  rgba(0, 0, 0, 0.89);
-  background-color: #CFB53B;
+}
+.header span{
+  text-transform: uppercase;
+  font-size: 80px;
+  transform: translate(-155px,0) scale(0.4);
+  animation: animate 5s forwards;
+
+}
+.header span:nth-of-type(2){
+  animation-delay: 0.10s;
+}
+.header span:nth-of-type(3){
+  animation-delay: 0.20s;
+}
+.header span:nth-of-type(4){
+  animation-delay: 0.30s;
+}
+.header span:nth-of-type(5){
+  animation-delay: 0.40s;
+}
+.header span:nth-of-type(6){
+  animation-delay: 0.50s;
+}
+.header span:nth-of-type(7){
+  animation-delay: 0.60s;
+}
+.header span:nth-of-type(8){
+  animation-delay: 0.70s;
+}
+.header span:nth-of-type(9){
+  animation-delay: 0.80s;
+}
+.header span:nth-of-type(10){
+  animation-delay: 0.90s;
+}
+@keyframes animate{
+  40%{
+    transform: translate(50px,0) scale(.7);
+    opacity: 1;
+  }
+  60%{
+    color: wheat;
+  }
+  80%{
+    transform: translate(0) scale(2);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
 }
 
 h2,
@@ -26,8 +73,8 @@ h1 {
   font-size: 2.4rem;
   color: #CFB53B;
   text-align: center;
-  padding: 2.73972602739726vh 0 2.73972602739726vh 0;
-  margin: 0 0 1.5220700152207vh 0;
+  padding: 3vh 0 3vh 0;
+  margin: 0 0 1.5vh 0;
   padding-top: 0;
 }
 
@@ -35,8 +82,8 @@ h2 {
   font-size: 2.2rem;
   color: #babd0c;
   text-align: center;
-  padding: 2.73972602739726vh 0 2.73972602739726vh 0;
-  margin: 0 0 1.5220700152207vh 0;
+  padding: 3vh 0 3vh 0;
+  margin: 0 0 1.5vh 0;
 }
 h2 span {
   border-bottom: solid #babd0c;
@@ -46,8 +93,8 @@ p {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding-right: 7.320644216691069vw;
-  padding-left: 7.320644216691069vw;
+  padding-right: 7vw;
+  padding-left: 7vw;
 }
 .information{
   text-align: center;
@@ -61,25 +108,15 @@ p {
   background-color: rgba(0, 0, 0, 0.89);
   position:relative;
 }
-h3{
-  font-size: 2.4rem;
-  color: #babd0c;
-  text-align: center;
-  padding: 2.73972602739726vh 0 2.73972602739726vh 0;
-  margin: 0 0 1.5220700152207vh 0;
-}
-h3 span {
-  border-bottom: solid #babd0c;
-}
 hr{
-  border:  0.030441400304414vh solid rgba(163, 162, 162, 0.2);
+  border:  0.03vh solid rgba(163, 162, 162, 0.2);
   width: 68%;
   margin: auto;
 }
 table.a{
   font-size: 1.2rem;
-  padding-left: 22.374429223744293vh;
-  border-spacing: 19.7869101978691vh  1.5220700152207vh;
+  padding-left: 11vw;
+  border-spacing: 20vh  1.5vh;
 }
 #bold{
   font-weight: bold;
@@ -95,8 +132,8 @@ ul{
 }
 table.b{
   font-size: 1.2rem;
-  border-spacing: 14.641288433382138vw 0.7320644216691069vw;
-  margin-left: 21.961932650073205vw;
+  border-spacing: 14.5vw 0.7vw;
+  margin-left: 22vw;
 }
 .img-responsive{
   width: 30vh;
@@ -106,21 +143,20 @@ table.b{
 #center{
   margin: auto;
   text-align: center;
-  padding-bottom: .76103500761035vh;
+  padding-bottom: .7vh;
 }
 .bar{
   margin: 0;
   padding: 0;
-  height: 7.610350076103501vh;
+  height: 7.6vh;
   width: 100vw;
-  position: absolute; // so that you can place the blank div(or blank space) wherever you want it. Make sure you have a "position: relative;" div. Absolute div must be inside a Relative div.
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.89);
 }
 .btn{
   cursor: pointer;
   font-size: 1.2rem;
   border: none;
-
   background: none!important;
   border: none;
   padding: 0!important;
